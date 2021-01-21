@@ -18,3 +18,15 @@ The database is structured as follows:
 **Bonus**: Which is the most rented film?
 The answer is Bucket Brotherhood
 This query might require using more than one join statement. Give it a try. We will talk about queries with multiple join statements later in the lessons.
+
+Error Code: 1140. In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggregated column 'sakila.film.title'; this is incompatible with sql_mode=only_full_group_by
+
+Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sakila.film.title' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+Error Code: 1140. In aggregated query without GROUP BY, expression #2 of SELECT list contains nonaggregated column 'sakila.a.category_id'; this is incompatible with sql_mode=only_full_group_by
+
+Error Code: 1052. Column 'film_id' in field list is ambiguous
+
+Error Code: 1055. Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'sakila.r.first_name' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+
+Error Code: 1146. Table 'sakila.actor_id' doesn't exist
